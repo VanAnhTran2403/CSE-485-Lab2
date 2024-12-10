@@ -31,8 +31,8 @@ $conn = null;
 <body>
     <main class="container">
         <h2 class="text-center">DANH SÁCH NGƯỜI DÙNG</h2>
-            <a href="add.php" class="btn btn-success me-2">Thêm mới</a>
-            <a href="logout.php" class="btn btn-danger float-end">Đăng xuất</a>
+            <a href="controllers/UsersController/add.php" class="btn btn-success me-2">Thêm mới</a>
+            <!-- <a href="logout.php" class="btn btn-danger float-end">Đăng xuất</a> -->
             
         </div>
         <table class="table table-bordered mt-3">
@@ -42,6 +42,7 @@ $conn = null;
                     <th scope="col">Tên người dùng</th>
                     <th scope="col">Mặt khẩu</th>
                     <th scope="col">Loại người dùng</th>
+                    <th scope="col">Chức năng</th>
                 </tr>
             </thead>
             <tbody>
@@ -57,9 +58,9 @@ $conn = null;
                             <td><?= htmlspecialchars($users['password']); ?></td>
                             <td><?= htmlspecialchars($users['role']); ?></td>
                             <td>
-                                <a href="detail.php?id=<?= $index + 1; ?>" class="btn btn-sm btn-info">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
+                                <a href="controllers/UsersController/update.php" class=""><i class="bi bi-pencil-fill"></i> </a>
+                                <a href="controllers/UsersController/delete.php" class=""><i class="bi bi-trash-fill"></i> </a>
+                          
                             </td>
                         </tr>
                     <?php endforeach; ?>

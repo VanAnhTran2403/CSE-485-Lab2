@@ -1,10 +1,10 @@
 create table users (
-	id INT,
+	id INT AUTO_INCREMENT PRIMARY KEY,
 	username VARCHAR(50),
 	password VARCHAR(50),
 	role VARCHAR(50)
 );
-
+DROP TABLE users
 CREATE TABLE categories (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL
@@ -20,56 +20,56 @@ CREATE TABLE news (
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 
-insert into users (id, username, password, role) values (1, 'ekeighley0', 'vS4nFpm9VV.jDRHO', 'Construction Manager');
-insert into users (id, username, password, role) values (2, 'charhoff1', 'iV4KAjY/wJpC', 'Subcontractor');
-insert into users (id, username, password, role) values (3, 'kdakhov2', 'hW5d8O)S`i/@!', 'Architect');
-insert into users (id, username, password, role) values (4, 'adelooze3', 'nV3basaWZR+C', 'Construction Worker');
-insert into users (id, username, password, role) values (5, 'rfarney4', 'qU0(iK)jZUq', 'Surveyor');
-insert into users (id, username, password, role) values (6, 'mdenziloe5', 'aI5J~lt!', 'Engineer');
-insert into users (id, username, password, role) values (7, 'laveries6', 'nE7y0Q=lMW$oX)*', 'Surveyor');
-insert into users (id, username, password, role) values (8, 'cmaingot7', 'rK7D1z9p{e#''x', 'Construction Foreman');
-insert into users (id, username, password, role) values (9, 'aterrazzo8', 'sO7gKrC>~Z''1<', 'Subcontractor');
-insert into users (id, username, password, role) values (10, 'hberrill9', 'hX6yeWPXU}(nH0', 'Electrician');
-insert into users (id, username, password, role) values (11, 'jhrynczyka', 'qO7EpxU4dJ|_"', 'Estimator');
-insert into users (id, username, password, role) values (12, 'yblackfordb', 'xR4H2N}a', 'Construction Expeditor');
-insert into users (id, username, password, role) values (13, 'faldousc', 'tO9>ox(Fxt', 'Construction Foreman');
-insert into users (id, username, password, role) values (14, 'jrennockd', 'gV7KaYgoyt6pJl', 'Estimator');
-insert into users (id, username, password, role) values (15, 'freinbeche', 'xQ1pXjHO', 'Construction Foreman');
-insert into users (id, username, password, role) values (16, 'cspacyf', 'lH4Ce@@6nlsI', 'Construction Expeditor');
-insert into users (id, username, password, role) values (17, 'wlombardog', 'dE8mYB1gPx`O', 'Subcontractor');
-insert into users (id, username, password, role) values (18, 'chairsineh', 'cT7tM<%rr', 'Construction Foreman');
-insert into users (id, username, password, role) values (19, 'ielsomi', 'hZ0FuIC(g''{A/xX''', 'Architect');
-insert into users (id, username, password, role) values (20, 'jclaypoolj', 'qM8rUdsw>`11a~6', 'Construction Expeditor');
-insert into users (id, username, password, role) values (21, 'dnewberyk', 'bP0hWV{Ty', 'Construction Expeditor');
-insert into users (id, username, password, role) values (22, 'lduchateaul', 'kT5aoLB{)uz#jw', 'Subcontractor');
-insert into users (id, username, password, role) values (23, 'pgomersallm', 'tO6C.?q(F', 'Construction Worker');
-insert into users (id, username, password, role) values (24, 'gcopsn', 'vG9j?krCp\$9hc8t', 'Construction Foreman');
-insert into users (id, username, password, role) values (25, 'pthomersono', 'pV9?UrmL,', 'Electrician');
-insert into users (id, username, password, role) values (26, 'ppleasep', 'tV99o+)X/7k', 'Supervisor');
-insert into users (id, username, password, role) values (27, 'remeneyq', 'cC5?1>`A,YN51r(7', 'Construction Expeditor');
-insert into users (id, username, password, role) values (28, 'mimpeyr', 'gN3H!S''=wS', 'Surveyor');
-insert into users (id, username, password, role) values (29, 'dtristrams', 'kX7JLX2''', 'Subcontractor');
-insert into users (id, username, password, role) values (30, 'iifet', 'bD1{~S@sk', 'Engineer');
-insert into users (id, username, password, role) values (31, 'rfosdicku', 'uO7O9F''3', 'Supervisor');
-insert into users (id, username, password, role) values (32, 'feddiesv', 'cG7#9zlvwsV~s', 'Subcontractor');
-insert into users (id, username, password, role) values (33, 'aswaddenw', 'aD21{a%{', 'Construction Expeditor');
-insert into users (id, username, password, role) values (34, 'obenoitx', 'yQ4`6pzNR_L/6e', 'Architect');
-insert into users (id, username, password, role) values (35, 'csivetery', 'aJ7U1?8A', 'Project Manager');
-insert into users (id, username, password, role) values (36, 'ffernyhoughz', 'yA6lS*L1WDt{2Tr', 'Construction Foreman');
-insert into users (id, username, password, role) values (37, 'rduchenne10', 'xT9j~&<VN8', 'Construction Worker');
-insert into users (id, username, password, role) values (38, 'dtipton11', 'wG834RGc>c1"|NoC', 'Construction Worker');
-insert into users (id, username, password, role) values (39, 'fyushmanov12', 'hS6"4deDAj(o', 'Construction Foreman');
-insert into users (id, username, password, role) values (40, 'skemson13', 'fW8pN`a9l!|&J', 'Electrician');
-insert into users (id, username, password, role) values (41, 'mratt14', 'fJ1!*<>hn', 'Engineer');
-insert into users (id, username, password, role) values (42, 'pannes15', 'qB0c\+._h#', 'Construction Manager');
-insert into users (id, username, password, role) values (43, 'aboggish16', 'yX1+XCw}b', 'Construction Worker');
-insert into users (id, username, password, role) values (44, 'aagg17', 'kF7=EUIi8/=@i~"', 'Construction Worker');
-insert into users (id, username, password, role) values (45, 'wdorgan18', 'cJ4+O?*V', 'Construction Manager');
-insert into users (id, username, password, role) values (46, 'abackes19', 'iT16V+47T+#n98', 'Construction Manager');
-insert into users (id, username, password, role) values (47, 'alealle1a', 'fP9p1&BdI.9IGL', 'Construction Manager');
-insert into users (id, username, password, role) values (48, 'bpattenden1b', 'pO69{PW~_/h2"B', 'Project Manager');
-insert into users (id, username, password, role) values (49, 'llintott1c', 'bO0"3fT\C', 'Engineer');
-insert into users (id, username, password, role) values (50, 'ekinane1d', 'kI2O#n\5b)Jz&H}?', 'Surveyor');
+insert into users (id, username, password, role) values (1, 'Toiboid', 'pR3#qXeE45V|g4n', 1);
+insert into users (id, username, password, role) values (2, 'Raul', 'aZ5,,Ve@8', 0);
+insert into users (id, username, password, role) values (3, 'Clarissa', 'lK6(Pa7ddMUuH>T/', 1);
+insert into users (id, username, password, role) values (4, 'Misty', 'cY1!oApd{e', 1);
+insert into users (id, username, password, role) values (5, 'Brendan', 'sT3*{11n2', 0);
+insert into users (id, username, password, role) values (6, 'Janelle', 'eP4$YjtNk''3~', 1);
+insert into users (id, username, password, role) values (7, 'Travus', 'tQ9=(z"$j@.7s*', 0);
+insert into users (id, username, password, role) values (8, 'Darrel', 'pT1{C=WM.7', 0);
+insert into users (id, username, password, role) values (9, 'Kinsley', 'pI7#v*NL1nTrF=FC', 0);
+insert into users (id, username, password, role) values (10, 'Cornelia', 'eW8|G4OWmC6', 1);
+insert into users (id, username, password, role) values (11, 'Leslie', 'wO7,N1\&R', 1);
+insert into users (id, username, password, role) values (12, 'Salome', 'aQ7_7\wEk7w', 1);
+insert into users (id, username, password, role) values (13, 'Kerri', 'sU1%q$mJTY2A', 1);
+insert into users (id, username, password, role) values (14, 'Gerald', 'nS7(Q$uf#X$q', 1);
+insert into users (id, username, password, role) values (15, 'Alexa', 'wM2{SIZsepiR0', 0);
+insert into users (id, username, password, role) values (16, 'Fonzie', 'wC5"6zd!h', 0);
+insert into users (id, username, password, role) values (17, 'Violette', 'nU5''gHtO4yQFjQ', 1);
+insert into users (id, username, password, role) values (18, 'Bernard', 'kE9+K#DI{$9lY', 0);
+insert into users (id, username, password, role) values (19, 'Jeane', 'oO0,~C6El', 1);
+insert into users (id, username, password, role) values (20, 'Chryste', 'iP0|OlHbG<c', 0);
+insert into users (id, username, password, role) values (21, 'Darcey', 'xE6)"QJx\pHE%', 0);
+insert into users (id, username, password, role) values (22, 'Virgilio', 'rM1~BZPOR', 1);
+insert into users (id, username, password, role) values (23, 'Lizabeth', 'mU9+pCxle', 0);
+insert into users (id, username, password, role) values (24, 'Kendall', 'cV6*A+<L$ftCR(HZ', 1);
+insert into users (id, username, password, role) values (25, 'Alyssa', 'bE5*HP,0{F3', 1);
+insert into users (id, username, password, role) values (26, 'Valli', 'uB9`2xPQ?nYsyO', 1);
+insert into users (id, username, password, role) values (27, 'Rainer', 'hH1|1y/W8=', 0);
+insert into users (id, username, password, role) values (28, 'Rosaleen', 'tV0>4\loG=WBR', 0);
+insert into users (id, username, password, role) values (29, 'Gale', 'cW9~hv+\oSKLh\~', 1);
+insert into users (id, username, password, role) values (30, 'Catherin', 'cS4`ZqbXz}|', 1);
+insert into users (id, username, password, role) values (31, 'Aldis', 'uN4?n_xHcG!', 1);
+insert into users (id, username, password, role) values (32, 'Adamo', 'vK3?Fd7\/e.8{.)?', 1);
+insert into users (id, username, password, role) values (33, 'Merrile', 'vW2#C?g81ZwoQ', 1);
+insert into users (id, username, password, role) values (34, 'Kissie', 'zN5\A2gTf', 0);
+insert into users (id, username, password, role) values (35, 'Abey', 'iR2.~!t?ri', 1);
+insert into users (id, username, password, role) values (36, 'Meredeth', 'nV2/NOJ"', 1);
+insert into users (id, username, password, role) values (37, 'Gwenneth', 'pF9\s{+Z#G+#?XA`', 0);
+insert into users (id, username, password, role) values (38, 'Darrell', 'dT7./XfPYfF', 1);
+insert into users (id, username, password, role) values (39, 'Cilka', 'wP6>f(Cd', 0);
+insert into users (id, username, password, role) values (40, 'Ynez', 'kS1&,~4r$Gwp096', 0);
+insert into users (id, username, password, role) values (41, 'Elias', 'fG2.xM=2"r', 1);
+insert into users (id, username, password, role) values (42, 'Holmes', 'uL2*%!N?4Ayi?L', 0);
+insert into users (id, username, password, role) values (43, 'Zach', 'rU3*W,|="k', 0);
+insert into users (id, username, password, role) values (44, 'Gisella', 'aG3_P8v3Fy=b?''.', 1);
+insert into users (id, username, password, role) values (45, 'Belicia', 'vR2.G}.kTBi0j', 1);
+insert into users (id, username, password, role) values (46, 'Faustine', 'lM1,IxT0/vNR3,B', 0);
+insert into users (id, username, password, role) values (47, 'Phaedra', 'bC8.)7eUL"LUh@r', 1);
+insert into users (id, username, password, role) values (48, 'Valida', 'cW3>/H{h3epjt3', 1);
+insert into users (id, username, password, role) values (49, 'Tallia', 'qL6,ntJR?g(A', 0);
+insert into users (id, username, password, role) values (50, 'Kessiah', 'oB7{ea`d', 0);
 
 insert into categories (id, name) values (1, 'Partridge');
 insert into categories (id, name) values (2, 'Scutching');
